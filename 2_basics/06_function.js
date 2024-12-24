@@ -9,8 +9,6 @@
 function addno(n1,n2){ // n1,n2 - parameters
     // console.log(n1+n2);
     return n1+n2
-
-    
 }
 
 // console.log(addno(5,3)) // 5,3 - arguments

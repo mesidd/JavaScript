@@ -16,5 +16,5 @@ let val1;
 val1 = null ?? 10 ?? 5
 console.log(val1)
 
-// Ternart Operator:
+// Ternary Operator:
 

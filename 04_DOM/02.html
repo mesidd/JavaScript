@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .bg{
+            background-color: black;
+            color: red;
+        }
+    </style>
+</head>
+<body class="bg">
+    <div>
+        <h1 class="heading" id="title">DOM Learning
+            <span>using span </span>
+        </h1>
+        <h2>This is second heaading.</h2>
+        <h3>This is third heading</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password"  id="pass">
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div> 
+</body>
+</html>
+
+<!-- 
+document.getElementById('title') // <h1 class="heading" id="title">DOM Learning</h1>
+document.getElementById('title').id // title
+document.getElementById('title').className // heading
+document.getElementById('title').getAttribute('id') // title
+
+Modify:
+
+document.getElementById('title').setAttribute('class','test') // override
+title.style.backgroundColor='green'
+title.style.borderRadius="15px"
+title.textContent // DOM Learning
+
+
+innerText = "DOM Learning using span"
+innerHtml = DOM Learning
+                    <span> using span </span>
+                "
+textContent = "DOM Learning
+            using span 
+        "
+
+CSS Selector 
+document.querySelector('input[type="password"]')
+
+-->

@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    /* min-height: 100vh; */
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+  }
+  #result {
+    margin: 10px;
+    font-size: 25px;
+    background-color: aliceblue;
+  }
+  

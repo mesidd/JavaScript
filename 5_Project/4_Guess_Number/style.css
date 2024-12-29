@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  font-size: 30px;
+  background-color: rgb(56, 52, 52);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+  font-size: 15px;
+}
+h1 {
+  background-color: aliceblue;
+  margin: 0;
+  color: black;
+  padding: 0;
+}
+#user_value {
+  width: 170px;
+  height: 30px;
+}

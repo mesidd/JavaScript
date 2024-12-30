@@ -5,8 +5,11 @@ const submit = document.getElementById('submit');
 
 const user_input = document.getElementById('user_value');
 const result_message = document.getElementById('res');
-const button = document.getElementById('button');
+const play = document.getElementById('play');
 
+play.addEventListener('click',function(){
+  restart_game();
+});
 
 let user_value = null;
 let count = 0;
@@ -19,7 +22,9 @@ function getRandomInt() {
 function displayMessage(message) {
   user_input.disabled = true;
   submit.disabled = true;
-  button.style.display ='inline';
+  user_input.style.display = 'none';
+  submit.style.display = 'none';
+  play.style.display ='inline';
   result_message.innerHTML = `${message}`; 
 }
 
@@ -44,10 +49,8 @@ rem_guess.innerHTML = (10 - count);
 
 form.reset();
 
-if(count == 2) {
+if(count == 10) {
 displayMessage("Alas! You lost the game.");
-user_input.style.display = 'none';
-submit.style.display = 'none';
 }
 });
 
@@ -56,7 +59,7 @@ function restart_game() {
   submit.disabled = false;
   user_input.style.display = 'inline';
   submit.style.display = 'inline';
-  button.style.display = 'none';
+  play.style.display = 'none';
   count = 0;
   prev_guess.innerHTML = 'Null';
   rem_guess.innerHTML = 10;

@@ -7,7 +7,7 @@ function xyz (){
 
 xyz(); // Hello
 xyz(); // Hello
-xyz(); // clear out - each time refernce id changes
+xyz(); // Skipped = clear out - each time refernce id changes
 clearTimeout(timer);
 xyz(); // Heello
 

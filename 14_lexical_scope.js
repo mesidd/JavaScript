@@ -1,14 +1,15 @@
-function increment (){
+function CreateCounter (){
   let count = 0;
+  // Closure Function - Function bounded by its lexical scope
   return function (){
     count++;
     return count;
   }
 }
 
-const x = increment();
-const y = increment();
-const z = increment();
+const x = CreateCounter();
+const y = CreateCounter();
+const z = CreateCounter();
 
 
 console.log("X call : ",x(),x(),x(),x())

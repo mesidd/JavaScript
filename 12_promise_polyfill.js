@@ -41,7 +41,7 @@ function wait(seconds){
   return p;
 }
 
-wait(5)
+wait(5) // Just for reference 5 Seconds
 .then((e)=> console.log("Promise resolved after 5 sec",e))
 .catch((e)=> console.log("Rejected after 5 seconds",e))
 .finally(()=> console.log("I will run each time"))

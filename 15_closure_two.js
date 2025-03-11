@@ -14,3 +14,9 @@ const arr2 = [ y(), y(), y(), y()]
 console.log(arr)
 console.log(arr2)
 
+
+// Memory Leak
+
+// x = null
+// y = null
+

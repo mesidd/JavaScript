@@ -13,6 +13,10 @@ class Teacher {
     console.log(this.id)
   }
 
+  static createId(){
+    return "1234"
+  }
+
 }
 
 const t1 = new Teacher ("Rohan", "Roy", "PE2124");
@@ -63,3 +67,16 @@ vc1.getFullName();
 vc1.getDegree();
 vc1.getId();
 vc1.getEmail();
+
+console.log(d1 instanceof Teacher); // true
+
+console.log(vc1 instanceof Teacher); // true
+
+console.log(vc1 instanceof Director); // true
+
+console.log(t1 instanceof Director); // false
+
+console.log(Teacher.createId()); // 1234
+
+console.log(d1.createId()); // Error - object can't access static function / variable
+

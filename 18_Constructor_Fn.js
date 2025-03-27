@@ -1,6 +1,21 @@
-//  
+// function Person (fname, lname, num) {
+//   this.fname = fname;
+//   this.lname = lname;
+//   this.num = num;
 
-// Constructor  -- Preferred Way 
+//   this.getFullName = function (){
+//     console.log(this.fname, this.lname)
+//   };
+// }
+
+// const p1 = new Person("Mahesh", "Roy", 1234);
+
+// p1.getFullName();
+
+// console.log(p1.num);
+
+
+//Constructor 
 
 class Person {
   constructor(fname, lname, num){

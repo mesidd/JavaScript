@@ -17,3 +17,7 @@ fs.readFile('./info.txt','utf-8',(err, res)=>{
 })
 console.log('2');
 // Output : 1 2 "...."
+
+// Default pool size - 4
+
+// os.cpus().length - 8

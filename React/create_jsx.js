@@ -10,7 +10,7 @@ function customRender(reactElement, mainContainer){
   domElement.setAttribute('target',reactElement.props.target)
 
   // Alternate and Efficient Way
-  // for (key in reactElement.props) {
+  // for (const key in reactElement.props) {
   //   domElement.setAttribute(key, reactElement.props[key])
   // }
   

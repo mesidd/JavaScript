@@ -24,7 +24,7 @@ function Card({message,city,img}) {
         <h1 className="font-RubikBold ">Wanna a ride!</h1>
         <button className="mt-4">{city || NYC}</button>
         
-        // {city = "NYC"} - Props
+        {/* {city = "NYC"} - Props */}
 
     </div>
   </div>

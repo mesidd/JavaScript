@@ -1,8 +1,19 @@
 function customRender(reactElement, mainContainer){
+  
   const domElement = document.createElement(reactElement.type)
+  
   domElement.innerHTML = reactElement.children
+
+  
+  // Manually Adding Each Attribute - Not Efficient
   domElement.setAttribute('href',reactElement.props.href)
   domElement.setAttribute('target',reactElement.props.target)
+
+  // Alternate and Efficient Way
+  // for (key in reactElement.props) {
+  //   domElement.setAttribute(key, reactElement.props[key])
+  // }
+  
   console.log(reactElement.props.href)
   mainContainer.appendChild(domElement)
 
